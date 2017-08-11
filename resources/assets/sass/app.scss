@@ -7,11 +7,13 @@
     --font-size: 15px;
     --text-color: rgb(235,235,235);
     --text-weight: 300;
-    --link-color: rgba(255,255,255,1);
-    --margin-top: 175px;
+    --link-color: rgba(234,255,204,1);
+    --menu-link-color: rgba(255,255,255,1);
+    --margin-top: 75px;
     --header-height: 80px;
     --line-height: 22px;
     --header-border-color: rgba(143,198,65,1);
+    --max-width: 600px;
 }
 
 
@@ -35,17 +37,54 @@ body {
 
 h1, h2, h3, h4 {
     font-family: var(--font-header);
-    border-bottom: 2px solid var(--header-border-color);
-    padding: 10px 50px 15px 50px;
     margin: 5px;
+    border-bottom: 2px solid var(--header-border-color);
+    padding: 5px 50px 5px 50px;
+}
+
+
+h1 {
+    padding: 10px 50px 15px 50px;
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+h3 {
+    border-bottom: 1px solid var(--header-border-color);
+    text-align: center;
+    display: block;
 }
 
 a {
     text-decoration: none;
+    color: var(--link-color);
+}
+
+ul.flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+li {
+    width: 150px;
+}
+
+.slogan {
+    font-family: Courgette;
+    font-size: 22px;
+    margin: 5px 10px 15px 10px;
 }
 
 div.app {
     height: 100%;
+}
+
+div.flexbox {
+    display: flex;
+    max-width: var(--max-width);
 }
 
 div.content {
@@ -56,10 +95,9 @@ div.content {
     margin-bottom: var(--margin-top);
     flex-direction: column;
     align-items: center;
-    padding: 25px 0px;
     border-top: 2px solid rgba(255,255,255,1);
     border-bottom: 2px solid rgba(255,255,255,1);
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.25);
 }
 
 div.section {
@@ -68,25 +106,24 @@ div.section {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: rgba(0,0,0,0.35);
 }
 
 div.section img {
     max-width: 100%;
     border: 2px solid rgba(255,255,255,1);
     border-radius: 2px;
+    margin-bottom: 15px;
 }
 
 div.p {
-    background-color: rgba(0,0,0,0.15);
     width: 100%;
     display: flex;
     justify-content: center;
-    border-top: 1px solid rgba(0,0,0,0.2);
-    border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 
 p {
-    max-width: 600px;
+    max-width: var(--max-width);
     margin: 20px;
 }
 
@@ -149,7 +186,7 @@ div.menu {
 }
 
 a.menu-item {
-    color: var(--link-color);
+    color: var(--menu-link-color);
     font-size: 22px;
 }
 
@@ -167,8 +204,40 @@ div.footer {
     position: fixed;
     bottom: 0px;
     width: 100%;
+    font-size: 13px;
 }
 
 div.footer div {
     padding: 5px 15px;
+    display: flex;
 }
+
+div.footer a {
+    color: var(--menu-link-color);
+}
+
+/* ICONS */
+
+
+.icon {
+    font-size: 20px;
+    padding: 1px;
+}
+
+.social-icons .icon {
+    font-size: 26px;
+    padding: 3px;
+}
+
+.footer .icon {
+    padding: 0px 5px;
+}
+
+h1.home-logo {
+    padding: 5px;
+}
+
+img.home-logo {
+    max-height: 125px;
+}
+

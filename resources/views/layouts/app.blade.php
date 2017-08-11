@@ -11,7 +11,7 @@
     <title>@yield('title') | Yeshi Dressing</title>
 
     <!-- Styles -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Source+Sans+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Source+Sans+Pro|Courgette" rel="stylesheet">
     <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
 
 </head>
@@ -33,7 +33,7 @@
         <div class="header" id="header">
 
             <div class="logo">
-                <img src="/images/logo_white.png" class="logo">
+                <a href="{{ route('home') }}"><img src="/images/logo_white.png" class="logo"></a>
             </div>
 
             <div class="menu">
@@ -49,9 +49,13 @@
 
 
         <div class="footer">
-            <div class="footer-email">info@yeshidressing.com</div>
-            <div class="footer-insta">
-                <div class="insta fa fa-fw fa-instagram"></div>
+            <div class="footer-email">
+                <a href="mailto:info@yeshidressing.com" target="_blank">info@yeshidressing.com</a>
+            </div>
+            <div>&copy; {{ \Carbon\Carbon::now()->format('Y') }} Yeshi Dressing</div>
+            <div class="footer-social-icons">
+                <a href="https://www.facebook.com/yeshidressing" target="_blank" class="icon fa fa-facebook-official"></a>
+                <a href="https://www.instagram.com/yeshidressing/" target="_blank" class="icon fa fa-instagram"></a>
             </div>
         </div>
 

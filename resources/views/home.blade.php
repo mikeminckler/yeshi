@@ -4,15 +4,56 @@
 
 @section ('content')
 
-    <h1>Yeshi Dressing</h1>
+    <h1 class="home-logo">
+        <img src="/images/logo_white.png" class="home-logo">
+    </h1>
+    <div class="slogan">Try It On Everything</div>
 
     <div class="section">
 
         <div class="p">
-            <p>
-                This started our family on a food journey that has brought us to this dressing. Yeshi is the product of a lot of research, trial and error. We have found that you can have good food and still be healthy. Barbara has a professional cooking degree from SAIT in Alberta. For me this was an easy transition as she is a great cook and is always very experimental in her cooking.  Not that long ago we started a Ketogenic Diet (No Carbohydrates) and lucky for us Yeshi is also Keto Friendly. This is a very good dressing for Vegetarians and for Meatatarians alike. It is so versatile, as it is also Dairy Free, Nut Free and Egg Free. 
+            <ul class="flex">
+                <li>Gluten Free</li>
+                <li>Dairy Free</li>
+                <li>Nut Free</li>
+                <li>Egg Free</li>
+                <li>Low in Sugar</li>
+                <li>Complete Protein</li>
+                <li>Low Cholesterol</li>
+                <li>High in B Vitamins</li>
+            </ul>
+        </div>
+
+        <div class="p">
+            <p>        
+    Yeshi is a nutritional yeast based dressing that's fit for gluten free and vegetarian diets. Slightly sweet and creamy, with the subtle flavours of garlic and cheesy nutty undertones, there's a Yeshi flavour for every dish.
             </p>
         </div>
+
+        
+        <h2>Flavours</h2>
+
+        <div class="p">
+
+            <div class="flexbox">
+
+                <img src="/images/original.jpg">
+                <div>
+                    <h3>Original</h3>
+                    <ul>
+                        <li>Green Salad</li>
+                        <li>Eggs</li>
+                        <li>Raw Veggies</li>
+                        <li>Sandwhich</li>
+                        <li>Wraps</li>
+                        <li>French Fries</li>
+                        <li>Pizza</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
 
         <p>
             <img src="images/yeshi-bottles.jpg">
