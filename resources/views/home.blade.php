@@ -30,6 +30,31 @@
             </p>
         </div>
 
+        <h2>Where To Buy</h2>
+
+        <div class="p">
+
+            <div class="flexbox">
+
+                <div class="flex-3">
+                    <img src="/images/bottles.jpg" class="square inline">
+                </div>
+                <div class="flex-2 flexbox flex-column">
+                    <p>Yeshi Dressing can be found in these local stores</p>
+                    <ul>
+                        <li>Old Farm Market</li>
+                        <li>Shawnigan Coffee and Chocolates</li>
+                        <li>Great Greens</li>
+                        <li>The Root Cellar Village Green Grocer</li>
+                        <li>Red Barn Market</li>
+                        <li>Country Grocer (Cobble Hill)</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
         
         <h2>Flavours</h2>
 
@@ -46,7 +71,7 @@
                         <li>Green Salad</li>
                         <li>Eggs</li>
                         <li>Raw Veggies</li>
-                        <li>Sandwhich</li>
+                        <li>Sandwich</li>
                         <li>Wraps</li>
                         <li>French Fries</li>
                         <li>Pizza</li>
@@ -65,7 +90,7 @@
                     <img src="/images/ginger.jpg" class="square inline">
                 </div>
                 <div class="flex-2 flexbox flex-column">
-                    <h3>Ginger Seasme</h3>
+                    <h3>Ginger Sesame</h3>
                     <ul>
                         <li>Rice</li>
                         <li>Sushi</li>
