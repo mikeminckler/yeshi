@@ -19,6 +19,7 @@ body, html {
 	max-width: 100%;
     overflow-x: hidden;
     height: 100%;
+    -webkit-overflow-scrolling: touch;
 }
 
 body {
@@ -148,6 +149,10 @@ div.home-content-area {
     padding-top: calc(40vh);
 }
 
+div.content-area {
+    padding-bottom: 50px;
+}
+
 div.section {
     width: 100%;
     max-width: var(--max-width);
@@ -262,9 +267,10 @@ div.footer a {
 
 div.banner, div.image-banner {
     width: 100%;
+    position: relative;
 }
 
-div.home-logo {
+div.home-logo, div.content-banner-text {
     position: absolute;
     z-index: 5;
     height: 40vh;
@@ -276,6 +282,26 @@ div.home-logo {
     width: 50%;
     padding-left: 5vw;
     background-image: linear-gradient(to right, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0));
+}
+
+div.content-banner-text {
+    height: 50vh;
+    max-height: 300px;
+    top: 2px;
+
+    & .banner-text-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & .banner-text-icon {
+            padding: 10px;
+        }
+    }
+}
+
+a.banner-link {
+    font-size: 30px;
 }
 
 h1.home-logo {
@@ -304,7 +330,7 @@ div.banner-image {
 div.content-banner {
     
     width: 100%;
-    height: 60vh;
+    height: 50vh;
     max-height: 300px;
     border-top: 2px solid rgba(255,255,255,1);
     border-bottom: 2px solid rgba(255,255,255,1);
@@ -337,6 +363,7 @@ div.gallery img {
     object-fit: cover;
     width: 100%;
     height: 100%;
+    border: 1px solid rgba(255,255,255,1);
 }
 
 

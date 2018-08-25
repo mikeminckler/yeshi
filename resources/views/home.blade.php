@@ -17,9 +17,9 @@
     <div class="home-content-area">
 
         <div class="section">
-            <h1>Fits Any Diet</h1>
+            <h1>For Any Diet</h1>
             <p>        
-    Yeshi is a nutritional yeast based dressing that's fit for gluten free and vegetarian diets. Slightly sweet and creamy, with the subtle flavours of garlic and cheesy nutty undertones, there's a Yeshi flavour for every dish.
+    Yeshi is a nutritional yeast based dressing that's fit for gluten free and vegetarian diets. Slightly sweet and creamy, with the subtle flavour of garlic complimented by a cheesy nutty undertone, there's a Yeshi flavour for every dish.
             </p>
             <div class="grid">
                 <div class="list-item" v-for="label in [
@@ -41,6 +41,12 @@
     </div>
 
     <div class="image-banner">
+        <div class="content-banner-text">
+            <div class="banner-text-link">
+                <div class="banner-text-icon"><a class="banner-link" href="/recipes"><i class="fas fa-clipboard-list"></i></a></div>
+                <div><a class="banner-link" href="/recipes">Recipes...</a></div>
+            </div>
+        </div>
         <div class="content-banner"><img src="/images/bowl.jpg" class="banner-image"></div>
     </div>
 
@@ -70,9 +76,10 @@
         </div>
 
         
-        <h2>Flavours</h2>
 
         <div class="section">
+
+            <h2>Flavours</h2>
 
             <div class="flexbox">
 
@@ -109,6 +116,8 @@
                         <li>Rice</li>
                         <li>Sushi</li>
                         <li>Stirfry</li>
+                        <li>Salmon</li>
+                        <li>Noodles</li>
                     </ul>
                 </div>
 
