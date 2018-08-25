@@ -24,6 +24,7 @@
             <div class="grid">
                 <div class="list-item" v-for="label in [
                     'Gluten Free',
+                    'Keto Friendly',
                     'Dairy Free',
                     'Nut Free',
                     'Egg Free',
@@ -43,8 +44,8 @@
     <div class="image-banner">
         <div class="content-banner-text">
             <div class="banner-text-link">
-                <div class="banner-text-icon"><a class="banner-link" href="/recipes"><i class="fas fa-clipboard-list"></i></a></div>
-                <!-- <div><a class="banner-link" href="/recipes">Recipes...</a></div> -->
+                <!--- <div class="banner-text-icon"><a class="banner-link" href="/recipes"><i class="fas fa-clipboard-list"></i></a></div>
+                <div><a class="banner-link" href="/recipes">Recipes...</a></div> -->
             </div>
         </div>
         <div class="content-banner"><img src="/images/bowl.jpg" class="banner-image"></div>
