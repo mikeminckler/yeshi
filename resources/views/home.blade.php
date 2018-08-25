@@ -4,51 +4,65 @@
 
 @section ('content')
 
-    <h1 class="home-logo">
-        <img src="/images/logo_white.png" class="home-logo">
-    </h1>
-    <div class="slogan">Try It On Everything</div>
-
-    <div class="section">
-
-        <div class="p">
-            <ul class="flex">
-                <li>Gluten Free</li>
-                <li>Dairy Free</li>
-                <li>Nut Free</li>
-                <li>Egg Free</li>
-                <li>Low in Sugar</li>
-                <li>Complete Protein</li>
-                <li>Low Cholesterol</li>
-                <li>High in B Vitamins</li>
-            </ul>
+    <div class="banner">
+        <div class="banner-image"><img src="/images/banner.jpg" class="banner-image"></div>
+        <div class="home-logo">
+            <h1 class="home-logo">
+                <img src="/images/logo_white.png" class="home-logo">
+            </h1>
+            <div class="slogan">Try It On Everything</div>
         </div>
+    </div>
 
-        <div class="p">
+    <div class="home-content-area">
+
+        <div class="section">
+            <h1>Fits Any Diet</h1>
             <p>        
     Yeshi is a nutritional yeast based dressing that's fit for gluten free and vegetarian diets. Slightly sweet and creamy, with the subtle flavours of garlic and cheesy nutty undertones, there's a Yeshi flavour for every dish.
             </p>
+            <div class="grid">
+                <div class="list-item" v-for="label in [
+                    'Gluten Free',
+                    'Dairy Free',
+                    'Nut Free',
+                    'Egg Free',
+                    'Low in Sugar',
+                    'Complete Protein',
+                    'Low Cholesterol',
+                    'High in B Vitamins',
+                ]">
+                    <div class="list-icon"><i class="fas fa-check"></i></div>
+                    <div class="list-name">@{{ label }}</div>
+                </div>
+            </div>
+
         </div>
+    </div>
 
-        <h2>Where To Buy</h2>
+    <div class="image-banner">
+        <div class="content-banner"><img src="/images/bowl.jpg" class="banner-image"></div>
+    </div>
 
-        <div class="p">
+
+    <div class="content-area">
+
+        <div class="section">
+
+            <h2>Where To Buy</h2>
+            <p>Yeshi Dressing can be found in these local stores</p>
 
             <div class="flexbox">
 
-                <div class="flex-3">
-                    <img src="/images/bottles.jpg" class="square inline">
-                </div>
-                <div class="flex-2 flexbox flex-column">
-                    <p>Yeshi Dressing can be found in these local stores</p>
-                    <ul>
-                        <li>Old Farm Market</li>
-                        <li>Shawnigan Coffee and Chocolates</li>
-                        <li>Great Greens</li>
-                        <li>The Root Cellar Village Green Grocer</li>
-                        <li>Red Barn Market</li>
-                        <li>Country Grocer (Cobble Hill)</li>
-                    </ul>
+                <div class="grid stores">
+
+                    <div class="list-item" v-for="store in stores">
+                        <div class="list-icon">
+                            <a :href="store.link" target="_blank"><i class="fas fa-map-marker-alt"></i></a>
+                        </div>
+                        <div class="list-name">@{{ store.name }}</div>
+                    </div>
+
                 </div>
 
             </div>
@@ -58,7 +72,7 @@
         
         <h2>Flavours</h2>
 
-        <div class="p">
+        <div class="section">
 
             <div class="flexbox">
 
@@ -82,7 +96,7 @@
         </div>
 
 
-        <div class="p">
+        <div class="section">
 
             <div class="flexbox">
 
@@ -102,7 +116,7 @@
 
         </div>
 
-        <div class="p">
+        <div class="section">
 
             <div class="flexbox">
 

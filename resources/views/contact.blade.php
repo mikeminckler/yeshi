@@ -5,22 +5,24 @@
 
 @section ('content')
 
-    <h1>Contact</h1>
+    <div class="content-area">
 
-    <div class="section">
+        <h1>Contact</h1>
 
-        <div class="p">
+        <div class="section">
             <p>
                 Paul Kleinschmidt<br/>
                 (250) 710-8085<br/>
                 <a href="mailto:info@yeshidressing.com" target="_blank">info@yeshidressing.com</a>
             </p>
-        </div>
 
-        <p class="social-icons">
-            <a href="https://www.facebook.com/yeshidressing" target="_blank" class="icon fa fa-facebook-official"></a>
-            <a href="https://www.instagram.com/yeshidressing/" target="_blank" class="icon fa fa-instagram"></a>
-        </p>
+            <a href="https://www.facebook.com/yeshidressing" target="_blank" class="icon">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/yeshidressing/" target="_blank" class="icon">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
 
     </div>
 

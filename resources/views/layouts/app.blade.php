@@ -18,16 +18,8 @@
 <body>
     <div id="app" class="app">
 
-        <div class="bg-container">
-            <div class="bg">
-                <img src="/images/bg/@yield('bg').jpg" class="bg">
-            </div>
-        </div>
-
-        <div class="bg-container-blur">
-            <div class="bg-blur">
-                <img src="/images/bg/@yield('bg').jpg" class="bg-blur">
-            </div>
+        <div class="bg">
+            <img src="/images/bg/@yield('bg').jpg" class="bg">
         </div>
 
         <div class="header" id="header">
@@ -54,14 +46,19 @@
             </div>
             <div>&copy; {{ \Carbon\Carbon::now()->format('Y') }} Yeshi Dressing</div>
             <div class="footer-social-icons">
-                <a href="https://www.facebook.com/yeshidressing" target="_blank" class="icon fa fa-facebook-official"></a>
-                <a href="https://www.instagram.com/yeshidressing/" target="_blank" class="icon fa fa-instagram"></a>
+                <a href="https://www.facebook.com/yeshidressing" target="_blank" class="icon">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/yeshidressing/" target="_blank" class="icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
             </div>
         </div>
 
     </div>
 
     <!-- Scripts -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <script src="{{ mix('/js/app.js') }}"></script>
 
 </body>
