@@ -11,8 +11,8 @@
     --line-height: 24px;
     --header-border-color: rgba(143,198,65,1);
     --border-color: rgba(255,255,255,1);
-    --max-width: 600px;
-    --content-padding: 25px;
+    --max-width: 650px;
+    --content-padding: 15px;
     --banner-height: 40vh;
     --ginger-color: rgba(230,230,80,1);
     --chili-color: rgba(255,70,70,1);
@@ -38,6 +38,10 @@ body {
     line-height: var(--line-height);
 }
 
+div {
+    box-sizing: border-box;
+}
+
 div.content-header {
     width: 100%;
     max-width: var(--max-width);
@@ -60,6 +64,8 @@ h1 {
 h2 {
     font-size: 28px;
     width: 75%;
+    position: relative;
+    z-index: 10;
 }
 
 h3 {
@@ -76,9 +82,19 @@ a {
 .grid {
     display: grid;
     width: 100%;
-    max-width: var(--max-width);
-    grid-template-columns: repeat(auto-fill, minmax(100px, 200px));
-    padding: 10px 0;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 200px));
+}
+
+div.stores {
+    grid-template-columns: repeat(auto-fit, minmax(250px, calc((var(--max-width) / 2) - 25px)));
+}
+
+div.banner-text.flavours {
+    width: 75%;
+}
+
+div.grid.ideas {
+    width: 75%;
 }
 
 .list-item {
@@ -92,10 +108,6 @@ a {
 
 .list-name {
     padding: 0 5px;
-}
-
-div.stores {
-    grid-template-columns: repeat(auto-fill, minmax(250px, 300px));
 }
 
 div.app {
@@ -128,7 +140,7 @@ div.flex-3 {
 }
 
 div.content {
-    z-index: 10;
+    z-index: 1;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -144,26 +156,17 @@ div.content-area {
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 
 div.section {
-    width: 100%;
     max-width: var(--max-width);
-    margin: 15px 0;
-}
-
-div.section img {
-    max-width: 100%;
-    border: 2px solid rgba(255,255,255,1);
-    border-radius: 2px;
-    margin-bottom: 15px;
+    margin: 15px;
+    flex: 1;
 }
 
 p {
     max-width: var(--max-width);
-    margin: 0px;
+    margin: var(--content-padding);
 }
 
 div.bg {
@@ -200,14 +203,14 @@ img.logo {
 div.menu {
     display: flex;
     align-items: center;
-    padding: 15px;
     justify-content: flex-end;
-    width: 100%;
+    flex: 1;
 }
 
 a.menu-item {
     color: var(--menu-link-color);
     font-size: 22px;
+    padding: 15px;
 }
 
 /* FOOTER */
@@ -305,7 +308,7 @@ div.banner-content.chili {
 
 div.banner-text {
     position: absolute;
-    z-index: 5;
+    z-index: 1;
     width: 50%;
     height: 100%;
 
@@ -332,7 +335,7 @@ div.banner-text {
 
 div.inset-image {
     position: absolute;
-    z-index: 10;
+    z-index: 2;
     top: calc( var(--banner-height) / 20 );
     right: 5vw;
 
@@ -351,7 +354,7 @@ img.rounded {
 div.home-logo {
     width: 290px;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
 
     & .slogan {
@@ -409,11 +412,9 @@ div.content-banner {
 div.gallery {
     display: grid;
     width: 100%;
-    max-width: 1000px;
+    max-width: 800px;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-gap: 10px;
-    padding: var(--content-padding);
-    margin: var(--content-padding);
 }
 
 div.image {
