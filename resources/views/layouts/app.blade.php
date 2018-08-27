@@ -11,7 +11,7 @@
     <title>@yield('title') | Yeshi Dressing</title>
 
     <!-- Styles -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Source+Sans+Pro|Courgette" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Courgette|Didact+Gothic" rel="stylesheet">
     <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
 
 </head>

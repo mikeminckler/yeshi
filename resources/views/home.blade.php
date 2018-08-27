@@ -4,17 +4,17 @@
 
 @section ('content')
 
-    <div class="banner">
-        <div class="banner-image"><img src="/images/banner.jpg" class="banner-image"></div>
-        <div class="home-logo">
-            <h1 class="home-logo">
+    <div class="banner-content">
+        <div class="banner-text home-logo">
+            <div class="home-logo-image">
                 <img src="/images/logo_white.png" class="home-logo">
-            </h1>
+            </div>
             <div class="slogan">Try It On Everything</div>
         </div>
+        <div class="banner-image"><img src="/images/banner.jpg" class="banner-image"></div>
     </div>
 
-    <div class="home-content-area">
+    <div class="content-area">
 
         <div class="section">
             <h1>For Any Diet</h1>
@@ -39,16 +39,17 @@
             </div>
 
         </div>
+
     </div>
 
-    <div class="image-banner">
-        <div class="content-banner-text">
-            <div class="banner-text-link">
-                <!--- <div class="banner-text-icon"><a class="banner-link" href="/recipes"><i class="fas fa-clipboard-list"></i></a></div>
-                <div><a class="banner-link" href="/recipes">Recipes...</a></div> -->
+    <div class="banner-content">
+        <div class="banner-text">
+            <div class="banner-link-container">
+                <div class="banner-text-icon"><a class="banner-link" href="/recipes"><i class="fas fa-clipboard-list"></i></a></div>
+                <div><a class="banner-link" href="/recipes">Recipes...</a></div>
             </div>
         </div>
-        <div class="content-banner"><img src="/images/bowl.jpg" class="banner-image"></div>
+        <div class="banner-image"><img src="/images/bowl.jpg" class="banner-image"></div>
     </div>
 
 
@@ -56,7 +57,7 @@
 
         <div class="section">
 
-            <h2>Where To Buy</h2>
+            <h1>Where To Buy</h1>
             <p>Yeshi Dressing can be found in these local stores</p>
 
             <div class="flexbox">
@@ -76,91 +77,91 @@
 
         </div>
 
-        
+    </div>
+
+    <div class="content-area">
 
         <div class="section">
-
-            <h2>Flavours</h2>
-
-            <div class="flexbox">
-
-                <div class="flex-3">
-                    <img src="/images/original.jpg" class="square inline">
-                </div>
-                <div class="flex-2 flexbox flex-column">
-                    <h3>Original</h3>
-                    <ul>
-                        <li>Green Salad</li>
-                        <li>Eggs</li>
-                        <li>Raw Veggies</li>
-                        <li>Sandwich</li>
-                        <li>Wraps</li>
-                        <li>French Fries</li>
-                        <li>Pizza</li>
-                    </ul>
-
-                </div>
-            </div>
+            <h1>Flavours</h1>
         </div>
 
+            <div class="banner-content padded original">
+                <div class="banner-text flex-column flex-start">
+                    <h2>Original</h2>
+                    <div class="grid">
+                        <div class="list-item" v-for="label in [
+                            'Green Salad',
+                            'Eggs',
+                            'Raw Veggies',
+                            'Sandwich',
+                            'Wraps',
+                            'French Fries',
+                            'Pizza'
+                        ]">
+                            <div class="list-icon"><i class="fas fa-check"></i></div>
+                            <div class="list-name">@{{ label }}</div>
+                        </div>
+                    </div>
 
-        <div class="section">
-
-            <div class="flexbox">
-
-                <div class="flex-3">
-                    <img src="/images/ginger.jpg" class="square inline">
                 </div>
-                <div class="flex-2 flexbox flex-column">
-                    <h3>Ginger Sesame</h3>
-                    <ul>
-                        <li>Rice</li>
-                        <li>Sushi</li>
-                        <li>Stirfry</li>
-                        <li>Salmon</li>
-                        <li>Noodles</li>
-                    </ul>
-                </div>
-
+                <div class="banner-image"><img src="/images/bowl.jpg" class="banner-image"></div>
+                <div class="inset-image"><img src="/images/original.jpg" class="inset-image rounded"></div>
             </div>
 
-        </div>
-
-        <div class="section">
-
-            <div class="flexbox">
-
-                <div class="flex-3">
-                    <img src="/images/chili.jpg" class="square inline">
-                </div>
-                <div class="flex-2 flexbox flex-column">
-                    <h3>Chili</h3>
-                    <ul>
-                        <li>Beef</li>
-                        <li>Chicken</li>
-                        <li>Seafood</li>
-                        <li>Marinade</li>
-                    </ul>
+            <div class="banner-content padded ginger">
+                <div class="banner-text flex-column flex-start">
+                    <h2>Ginger Sesame</h2>
+                    <div class="grid">
+                        <div class="list-item" v-for="label in [
+                            'Rice',
+                            'Sushi',
+                            'Stirfry',
+                            'Salmon',
+                            'Noodles',
+                        ]">
+                            <div class="list-icon"><i class="fas fa-check"></i></div>
+                            <div class="list-name">@{{ label }}</div>
+                        </div>
+                    </div>
 
                 </div>
+                <div class="banner-image"><img src="/images/bowl.jpg" class="banner-image"></div>
+                <div class="inset-image"><img src="/images/ginger.jpg" class="inset-image rounded"></div>
             </div>
-        </div>
 
-        <p>
-            <div class="gallery">
+            <div class="banner-content padded chili">
+                <div class="banner-text flex-column flex-start">
+                    <h2>Chili</h2>
+                    <div class="grid">
+                        <div class="list-item" v-for="label in [
+                            'Beef',
+                            'Chicken',
+                            'Seafood',
+                            'Marinade'
+                        ]">
+                            <div class="list-icon"><i class="fas fa-check"></i></div>
+                            <div class="list-name">@{{ label }}</div>
+                        </div>
+                    </div>
 
-                <div class="image"><img src="/images/gallery/salad.jpg"></div>
-                <div class="image"><img src="/images/gallery/sushi.jpg"></div>
-                <div class="image"><img src="/images/gallery/stirfry.jpg"></div>
-                <div class="image"><img src="/images/gallery/egg.jpg"></div>
-                <div class="image"><img src="/images/gallery/steak.jpg"></div>
-                <div class="image"><img src="/images/gallery/bowl.jpg"></div>
-                <div class="image"><img src="/images/gallery/shrimp.jpg"></div>
-                <div class="image"><img src="images/yeshi-bottles.jpg"></div>
-
+                </div>
+                <div class="banner-image"><img src="/images/bowl.jpg" class="banner-image"></div>
+                <div class="inset-image"><img src="/images/chili.jpg" class="inset-image rounded"></div>
             </div>
-        </p>
 
+    </div>
+
+
+    <div class="gallery">
+
+        <div class="image"><img src="/images/gallery/salad.jpg"></div>
+        <div class="image"><img src="/images/gallery/sushi.jpg"></div>
+        <div class="image"><img src="/images/gallery/stirfry.jpg"></div>
+        <div class="image"><img src="/images/gallery/egg.jpg"></div>
+        <div class="image"><img src="/images/gallery/steak.jpg"></div>
+        <div class="image"><img src="/images/gallery/bowl.jpg"></div>
+        <div class="image"><img src="/images/gallery/shrimp.jpg"></div>
+        <div class="image"><img src="images/yeshi-bottles.jpg"></div>
 
     </div>
 
