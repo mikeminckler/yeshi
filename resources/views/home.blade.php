@@ -5,12 +5,15 @@
 @section ('content')
 
     <div class="banner-content">
-        <div class="banner-text home-logo">
-            <div class="home-logo-image">
-                <img src="/images/logo_white.png" class="home-logo">
+        <div class="banner-text banner-text-logo">
+            <div class="home-logo">
+                <div class="home-logo-image">
+                    <img src="/images/logo_white.png" class="home-logo">
+                </div>
+                <div class="slogan">Try It On Everything</div>
             </div>
-            <div class="slogan">Try It On Everything</div>
         </div>
+        <div class="banner-bg banner-bg-logo"></div>
         <div class="banner-image"><img src="/images/banner.jpg" class="banner-image"></div>
     </div>
 
@@ -42,13 +45,18 @@
 
     </div>
 
-    <div class="banner-content">
+    <div class="banner-content short-banner">
         <div class="banner-text">
             <div class="banner-link-container">
-                <div class="banner-text-icon"><a class="banner-link" href="/recipes"><i class="fas fa-clipboard-list"></i></a></div>
-                <div><a class="banner-link" href="/recipes">Recipes...</a></div>
+                <div><a class="banner-link" href="/recipes">Recipes</a></div>
+                <div class="banner-text-icon">
+                    <a class="banner-link" href="/recipes">
+                        <i class="fas fa-arrow-alt-circle-right"></i>
+                    </a>
+                </div>
             </div>
         </div>
+        <div class="banner-bg"></div>
         <div class="banner-image"><img src="/images/bowl.jpg" class="banner-image"></div>
     </div>
 
@@ -76,74 +84,84 @@
     </div>
 
     <div class="content-area">
-
         <div class="section">
             <h1>Flavours</h1>
         </div>
     </div>
 
     <div class="banner-content padded original">
-        <div class="banner-text flex-column flex-start flavours">
-            <h2>Original</h2>
-            <div class="grid ideas">
-                <div class="list-item" v-for="label in [
-                    'Green Salad',
-                    'Eggs',
-                    'Raw Veggies',
-                    'Sandwich',
-                    'Wraps',
-                    'French Fries',
-                    'Pizza'
-                ]">
-                    <div class="list-icon"><i class="fas fa-check"></i></div>
-                    <div class="list-name">@{{ label }}</div>
+        <div class="banner-text flavours">
+
+            <div class="flex-1">
+                <h2>Original</h2>
+                <div class="grid ideas">
+                    <div class="list-item" v-for="label in [
+                        'Green Salad',
+                        'Eggs',
+                        'Raw Veggies',
+                        'Sandwich',
+                        'Wraps',
+                        'French Fries',
+                        'Pizza'
+                    ]">
+                        <div class="list-icon"><i class="fas fa-check"></i></div>
+                        <div class="list-name">@{{ label }}</div>
+                    </div>
                 </div>
             </div>
-
+            <div class="inset-image"><img src="/images/original.jpg" class="inset-image rounded"></div>
         </div>
-        <div class="banner-image"><img src="/images/bowl.jpg" class="banner-image"></div>
-        <div class="inset-image"><img src="/images/original.jpg" class="inset-image rounded"></div>
+        <div class="banner-bg"></div>
+        <div class="banner-image"><img src="/images/egg.jpg" class="banner-image"></div>
     </div>
 
     <div class="banner-content padded ginger">
-        <div class="banner-text flex-column flex-start flavours">
-            <h2>Ginger Sesame</h2>
-            <div class="grid ideas">
-                <div class="list-item" v-for="label in [
-                    'Rice',
-                    'Sushi',
-                    'Stirfry',
-                    'Salmon',
-                    'Noodles',
-                ]">
-                    <div class="list-icon"><i class="fas fa-check"></i></div>
-                    <div class="list-name">@{{ label }}</div>
+        <div class="banner-text flavours">
+
+            <div class="flex-1">
+                <h2>Ginger Sesame</h2>
+                <div class="grid ideas">
+                    <div class="list-item" v-for="label in [
+                        'Rice',
+                        'Sushi',
+                        'Stirfry',
+                        'Salmon',
+                        'Noodles',
+                    ]">
+                        <div class="list-icon"><i class="fas fa-check"></i></div>
+                        <div class="list-name">@{{ label }}</div>
+                    </div>
                 </div>
             </div>
 
+            <div class="inset-image"><img src="/images/ginger.jpg" class="inset-image rounded"></div>
         </div>
-        <div class="banner-image"><img src="/images/bowl.jpg" class="banner-image"></div>
-        <div class="inset-image"><img src="/images/ginger.jpg" class="inset-image rounded"></div>
+        <div class="banner-bg"></div>
+        <div class="banner-image"><img src="/images/sushi.jpg" class="banner-image"></div>
     </div>
 
     <div class="banner-content padded chili">
-        <div class="banner-text flex-column flex-start flavours">
-            <h2>Chili</h2>
-            <div class="grid ideas">
-                <div class="list-item" v-for="label in [
-                    'Beef',
-                    'Chicken',
-                    'Seafood',
-                    'Marinade'
-                ]">
-                    <div class="list-icon"><i class="fas fa-check"></i></div>
-                    <div class="list-name">@{{ label }}</div>
+        <div class="banner-text flavours">
+
+            <div class="flex-1">
+                <h2>Chili</h2>
+                <div class="grid ideas">
+                    <div class="list-item" v-for="label in [
+                        'Beef',
+                        'Chicken',
+                        'Seafood',
+                        'Marinade'
+                    ]">
+                        <div class="list-icon"><i class="fas fa-check"></i></div>
+                        <div class="list-name">@{{ label }}</div>
+                    </div>
                 </div>
             </div>
 
+            <div class="inset-image"><img src="/images/chili.jpg" class="inset-image rounded"></div>
         </div>
-        <div class="banner-image"><img src="/images/bowl.jpg" class="banner-image"></div>
-        <div class="inset-image"><img src="/images/chili.jpg" class="inset-image rounded"></div>
+        <div class="banner-bg"></div>
+        <div class="banner-image"><img src="/images/shrimp.jpg" class="banner-image"></div>
     </div>
 
     <div class="gallery">

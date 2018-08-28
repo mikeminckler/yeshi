@@ -17,4 +17,9 @@ class PagesController extends Controller
         return view()->make('contact');
     }
 
+    public function recipes()
+    {
+        return view()->make('recipes');
+    }
+
 }

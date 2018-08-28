@@ -29,6 +29,7 @@
             </div>
 
             <div class="menu">
+                <a href="{{ route('recipes') }}" class="menu-item">Recipes</a>
                 <a href="{{ route('contact') }}" class="menu-item">Contact</a>
             </div>
 

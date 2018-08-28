@@ -6,10 +6,10 @@
 @section ('content')
 
     <div class="content-area">
-
-        <h1>Contact</h1>
-
         <div class="section">
+
+            <h1>Contact</h1>
+
             <p>
                 Paul Kleinschmidt<br/>
                 (250) 710-8085<br/>
