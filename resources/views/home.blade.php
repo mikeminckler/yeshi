@@ -74,7 +74,7 @@
                     <div class="list-icon">
                         <a :href="store.link" target="_blank"><i class="fas fa-map-marker-alt"></i></a>
                     </div>
-                    <div class="list-name">@{{ store.name }}</div>
+                    <div class="list-name"><a :href="store.link" target="_blank">@{{ store.name }}</a></div>
                 </div>
 
             </div>

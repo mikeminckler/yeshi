@@ -81,6 +81,18 @@ const app = new Vue({
                 name: 'The Market Garden, Vic West',
                 link: 'https://goo.gl/maps/9EnzRuHF1eK2',
             },
+            {
+                name: 'Peppers Foods, Cadboro Bay',
+                link: 'https://goo.gl/maps/1LQahnUXiAv',
+            },
+            {
+                name: 'Hopcott Premium Meats, Pitt Meadows',
+                link: 'https://goo.gl/maps/wP8WCCFpCJN2',
+            },
+            {
+                name: 'Natures Pickens, Abbotsford',
+                link: 'https://goo.gl/maps/z7YtD8NxmqA2',
+            },
         ] 
     }
 
