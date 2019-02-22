@@ -14,7 +14,8 @@ if (token) {
 
 window.Vue = require('vue');
 
-Vue.component('recipes', require('./components/recipes.vue'));
+import Recipes from './components/recipes.vue';
+Vue.component('recipes', Recipes);
 
 const app = new Vue({
     el: '#app',
