@@ -39,7 +39,7 @@ const app = new Vue({
             },
             {
                 name: 'Red Barn Market, All Locations',
-                link: 'https://www.google.ca/maps/search/Red+Barn+Markets/@48.4723271,-123.3870522,13z/data=!3m1!4b1',
+                link: 'https://www.google.ca/maps/search/red+barn+market+/@48.4730794,-123.4133658,12.26z',
             },
             {
                 name: 'Country Grocer, Cobble Hill',
@@ -92,6 +92,70 @@ const app = new Vue({
             {
                 name: 'Natures Pickens, Abbotsford',
                 link: 'https://goo.gl/maps/z7YtD8NxmqA2',
+            },
+            {
+                name: 'L & D Meats and Deli, Kelowna',
+                link: 'https://goo.gl/maps/qyzNZFvpNV72',
+            },
+            {
+                name: 'Meinhardt Fine Foods, Downtown Vancouver',
+                link: 'https://goo.gl/maps/GPTnRBeQcXK2',
+            },
+            {
+                name: 'Nourish Market, Lynn Valley Village',
+                link: 'https://goo.gl/maps/bYYvGuqGQQx',
+            },
+            {
+                name: 'Birdcage Confectionary, Victoria',
+                link: 'https://goo.gl/maps/KzmxZuijuFz',
+            },
+            {
+                name: 'Bruce\'s Country Market, Albion',
+                link: 'https://goo.gl/maps/CsrN9odEfeR2',
+            },
+            {
+                name: 'Discovery Foods Willow Point, Campbell River',
+                link: 'https://goo.gl/maps/Xm1kJBY7Sbm',
+            },
+            {
+                name: 'The Fernwood Inn, Victoria',
+                link: 'https://goo.gl/maps/JKZ8x6aZj652',
+            },
+            {
+                name: 'Lee\'s Market, Fort Langley',
+                link: 'https://goo.gl/maps/98hz6N1fEkS2',
+            },
+            {
+                name: 'Sunshine Market, Vancouver',
+                link: 'https://goo.gl/maps/J2EAzYwMLh22',
+            },
+            {
+                name: 'Salt Spring Mercantile, Fulford Harbour',
+                link: 'https://goo.gl/maps/5Lj6jJ9swxP2',
+            },
+            {
+                name: 'Salt Spring Mercantil, Salt Spring Islande',
+                link: 'https://goo.gl/maps/5Lj6jJ9swxP2',
+            },
+            {
+                name: 'Western Foods, Sooke',
+                link: 'https://goo.gl/maps/q9UJM6uS6bG2',
+            },
+            {
+                name: 'Daystar Market, Galiano',
+                link: 'https://goo.gl/maps/tFgLxAUYyUr',
+            },
+            {
+                name: 'Weinberg\'s Good Food, Denman Island',
+                link: 'https://goo.gl/maps/tFgLxAUYyUr',
+            },
+            {
+                name: 'Grove Hall Farm, Italian Kitchen, Market & Deli, Duncan',
+                link: 'https://goo.gl/maps/jyxmPAqSNvB2',
+            },
+            {
+                name: 'The Whistler Grocery Store, Whistler',
+                link: 'https://goo.gl/maps/kwf6Auja3XG2',
             },
         ] 
     }
