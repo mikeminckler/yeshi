@@ -109,7 +109,7 @@
                     </div>
                 </div>
             </div>
-            <div class="inset-image"><img src="/images/original.jpg" class="inset-image rounded"></div>
+            <div class="inset-image"><img src="/images/original2.jpg" class="inset-image rounded"></div>
         </div>
         <div class="banner-bg"></div>
         <div class="banner-image"><img src="/images/egg.jpg" class="banner-image"></div>
@@ -134,7 +134,7 @@
                 </div>
             </div>
 
-            <div class="inset-image"><img src="/images/ginger.jpg" class="inset-image rounded"></div>
+            <div class="inset-image"><img src="/images/ginger2.jpg" class="inset-image rounded"></div>
         </div>
         <div class="banner-bg"></div>
         <div class="banner-image"><img src="/images/sushi.jpg" class="banner-image"></div>
@@ -144,7 +144,7 @@
         <div class="banner-text flavours">
 
             <div class="flex-1">
-                <h2>Chili</h2>
+                <h2>Mild Chili</h2>
                 <div class="grid ideas">
                     <div class="list-item" v-for="label in [
                         'Beef',
@@ -158,7 +158,7 @@
                 </div>
             </div>
 
-            <div class="inset-image"><img src="/images/chili.jpg" class="inset-image rounded"></div>
+            <div class="inset-image"><img src="/images/chili2.jpg" class="inset-image rounded"></div>
         </div>
         <div class="banner-bg"></div>
         <div class="banner-image"><img src="/images/shrimp.jpg" class="banner-image"></div>
@@ -174,6 +174,8 @@
                         'Bean Salad',
                         'Ribs',
                         'Wings',
+                        'Burgers',
+                        'Tacos',
                     ]">
                         <div class="list-icon"><i class="fas fa-check"></i></div>
                         <div class="list-name">@{{ label }}</div>

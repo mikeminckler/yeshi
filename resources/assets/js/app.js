@@ -27,6 +27,22 @@ const app = new Vue({
         galleryImage: '',
         stores: [
             {
+                name: 'Fresh Street Market, Lower Mainland',
+                link: 'http://www.freshstmarket.com/',
+            },
+            {
+                name: 'Quality Foods, Vancouver Island',
+                link: 'https://www.qualityfoods.com/about-qf/location-hours',
+            },
+            {
+                name: 'Freason Bros, Alberta',
+                link: 'http://freson.com/',
+            },
+            {
+                name: 'Red Barn Market, All Locations',
+                link: 'https://www.google.ca/maps/search/red+barn+market+/@48.4730794,-123.4133658,12.26z',
+            },
+            {
                 name: 'Old Farm Market',
                 link: 'https://goo.gl/maps/7Pb4QYYaPC62',
             },
@@ -41,10 +57,6 @@ const app = new Vue({
             {
                 name: 'The Root Cellar Village Green Grocer',
                 link: 'https://goo.gl/maps/eGmCSPRhiZF2',
-            },
-            {
-                name: 'Red Barn Market, All Locations',
-                link: 'https://www.google.ca/maps/search/red+barn+market+/@48.4730794,-123.4133658,12.26z',
             },
             {
                 name: 'Country Grocer, Cobble Hill',
