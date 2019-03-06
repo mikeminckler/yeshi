@@ -35,7 +35,7 @@ const app = new Vue({
                 link: 'https://www.qualityfoods.com/about-qf/location-hours',
             },
             {
-                name: 'Freason Bros, Alberta',
+                name: 'Freson Bros, Alberta',
                 link: 'http://freson.com/',
             },
             {
