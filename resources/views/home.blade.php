@@ -14,7 +14,7 @@
             </div>
         </div>
         <div class="banner-bg banner-bg-logo"></div>
-        <div class="banner-image"><img src="/images/banner.jpg" class="banner-image"></div>
+        <div class="banner-image"><img src="/images/banner2.jpg" class="banner-image"></div>
     </div>
 
     <div class="content-area">
@@ -164,17 +164,51 @@
         <div class="banner-image"><img src="/images/shrimp.jpg" class="banner-image"></div>
     </div>
 
-    <div class="gallery">
+    <div class="banner-content padded chipotle">
+        <div class="banner-text flavours">
 
-        <div class="image"><img src="/images/gallery/salad.jpg"></div>
-        <div class="image"><img src="/images/gallery/sushi.jpg"></div>
-        <div class="image"><img src="/images/gallery/stirfry.jpg"></div>
-        <div class="image"><img src="/images/gallery/egg.jpg"></div>
-        <div class="image"><img src="/images/gallery/steak.jpg"></div>
-        <div class="image"><img src="/images/gallery/bowl.jpg"></div>
-        <div class="image"><img src="/images/gallery/shrimp.jpg"></div>
-        <div class="image"><img src="images/yeshi-bottles.jpg"></div>
+            <div class="flex-1">
+                <h2>Smokey Chipotle</h2>
+                <div class="grid ideas">
+                    <div class="list-item" v-for="label in [
+                        'Bean Salad',
+                        'Ribs',
+                        'Wings',
+                    ]">
+                        <div class="list-icon"><i class="fas fa-check"></i></div>
+                        <div class="list-name">@{{ label }}</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="inset-image"><img src="/images/chipotle.jpg" class="inset-image rounded"></div>
+        </div>
+        <div class="banner-bg"></div>
+        <div class="banner-image"><img src="/images/bean_salad.jpg" class="banner-image"></div>
+    </div>
+
+    <div class="gallery">
+            
+        <div class="image" v-for="image in [
+            'sushi2',
+            'burger',
+            'bowl2',
+            'ribs',
+            'wings',
+            'bean_salad',
+            'salad',
+            'sushi',
+            'stirfry',
+            'egg',
+            'steak',
+            'bowl',
+            'shrimp',
+        ]">
+            <img @click="galleryImage = image" :src="'/images/gallery/' + image + '.jpg'">
+        </div>
 
     </div>
+
+    <image-viewer :image="galleryImage"></image-viewer>
 
 @endsection

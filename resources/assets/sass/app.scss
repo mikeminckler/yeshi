@@ -17,6 +17,7 @@
     --original-color: rgba(143,198,65,1);
     --ginger-color: rgba(230,230,80,1);
     --chili-color: rgba(255,70,70,1);
+    --chipotle-color: rgba(234,128,35,1);
 }
 
 
@@ -312,6 +313,22 @@ div.banner-content.chili {
 
 }
 
+div.banner-content.chipotle {
+
+    h2 {
+        border-bottom-color: var(--chipotle-color);
+    }
+
+    & img.inset-image {
+        border-color: var(--chipotle-color);
+    }
+
+    .list-icon {
+        color: var(--chipotle-color);
+    }
+
+}
+
 div.banner-text {
     position: absolute;
     z-index: 5;
@@ -455,6 +472,38 @@ div.gallery img {
     border: 1px solid var(--image-border-color);
 }
 
+div.image-viewer {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.85);
+    position: fixed;
+    top: 0;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & div.close {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 15px;
+        right: 15px;
+        background-color: var(--original-color);
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 18px;
+        color: rgb(0,0,0);
+    }
+
+    & img {
+        border: 1px solid var(--image-border-color);
+    }
+}
+
 div.recipes {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -584,7 +633,7 @@ div.button {
 
     div.banner-text-logo {
         width: 100%;
-        background-image: linear-gradient(to right, rgba(0,0,0,0.75) 50%, rgba(0,0,0,0.75) 85%, rgba(0,0,0,.75));
+        background-image: linear-gradient(to right, rgba(0,0,0,0.75) 50%, rgba(0,0,0,0.5) 85%, rgba(0,0,0,.35));
     }
 
 }

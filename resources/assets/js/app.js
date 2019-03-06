@@ -17,10 +17,14 @@ window.Vue = require('vue');
 import Recipes from './components/recipes.vue';
 Vue.component('recipes', Recipes);
 
+import ImageViewer from './components/ImageViewer.vue';
+Vue.component('image-viewer', ImageViewer);
+
 const app = new Vue({
     el: '#app',
 
     data: {
+        galleryImage: '',
         stores: [
             {
                 name: 'Old Farm Market',

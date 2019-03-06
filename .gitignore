@@ -13,3 +13,7 @@ npm-debug.log
 /public/css/app.css
 /public/js/app.js
 /public/mix-manifest.json
+.php_cs.cache
+/tags
+tags.temp
+tags.lock
