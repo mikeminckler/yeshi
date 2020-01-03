@@ -142,6 +142,15 @@ const app = new Vue({
                 ],
             },
             {
+                name: 'Saskatchewan',
+                stores: [
+                    {
+                        name: 'Save on Foods, All Locations',
+                        link: 'https://www.saveonfoods.com/',
+                    },
+                ],
+            },
+            {
                 name: 'Manitoba',
                 stores: [
                     {
