@@ -8,7 +8,7 @@
         <div class="banner-text banner-text-logo">
             <div class="home-logo">
                 <div class="home-logo-image">
-                    <img src="/images/logo_white.png" class="home-logo">
+                    <img src="/images/yeshi_logo.png" class="home-logo">
                 </div>
                 <div class="slogan">Try It On Everything</div>
             </div>
@@ -68,13 +68,17 @@
             <h1>Where To Buy</h1>
             <p class="center">Yeshi Dressing can be found in these local stores</p>
 
-            <div class="grid stores">
+            <div class="" v-for="region in stores">
 
-                <div class="list-item" v-for="store in stores">
-                    <div class="list-icon">
-                        <a :href="store.link" target="_blank"><i class="fas fa-map-marker-alt"></i></a>
+                <h3>@{{ region.name }}</h3>
+
+                <div class="grid stores">
+                    <div class="list-item" v-for="store in region.stores">
+                        <div class="list-icon">
+                            <a :href="store.link" target="_blank"><i class="fas fa-map-marker-alt"></i></a>
+                        </div>
+                        <div class="list-name"><a :href="store.link" target="_blank">@{{ store.name }}</a></div>
                     </div>
-                    <div class="list-name"><a :href="store.link" target="_blank">@{{ store.name }}</a></div>
                 </div>
 
             </div>
@@ -108,6 +112,7 @@
                         <div class="list-name">@{{ label }}</div>
                     </div>
                 </div>
+                <div class="py-4"><a href="/ingredients/original">Ingredients</a></div>
             </div>
             <div class="inset-image"><img src="/images/original2.jpg" class="inset-image rounded"></div>
         </div>
@@ -132,6 +137,7 @@
                         <div class="list-name">@{{ label }}</div>
                     </div>
                 </div>
+                <div class="py-4"><a href="/ingredients/ginger">Ingredients</a></div>
             </div>
 
             <div class="inset-image"><img src="/images/ginger2.jpg" class="inset-image rounded"></div>
@@ -156,6 +162,7 @@
                         <div class="list-name">@{{ label }}</div>
                     </div>
                 </div>
+                <div class="py-4"><a href="/ingredients/chili">Ingredients</a></div>
             </div>
 
             <div class="inset-image"><img src="/images/chili2.jpg" class="inset-image rounded"></div>
@@ -181,6 +188,7 @@
                         <div class="list-name">@{{ label }}</div>
                     </div>
                 </div>
+                <div class="py-4"><a href="/ingredients/chipotle">Ingredients</a></div>
             </div>
 
             <div class="inset-image"><img src="/images/chipotle.jpg" class="inset-image rounded"></div>

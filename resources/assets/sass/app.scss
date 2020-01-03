@@ -1,3 +1,7 @@
+@tailwind base;
+
+@tailwind components;
+
 :root {
     --bg-color: rgba(143,198,65,1);
     --font: 'Roboto', sans-serif;
@@ -14,7 +18,7 @@
     --max-width: 650px;
     --content-padding: 15px;
     --banner-height: 40vh;
-    --original-color: rgba(143,198,65,1);
+    --original-color: rgba(141,197,64,1);
     --ginger-color: rgba(230,230,80,1);
     --chili-color: rgba(255,70,70,1);
     --chipotle-color: rgba(234,128,35,1);
@@ -199,7 +203,7 @@ div.header {
 }
 
 img.logo {
-    max-height: 65px;
+    max-height: 85px;
     padding: 10px;
 }
 
@@ -396,7 +400,6 @@ div.home-logo {
 
     & div.home-logo-image {
         padding: 5px;
-        border-bottom: 2px solid var(--original-color);
         padding-bottom: 0px;
         margin-bottom: 10px;
     }
@@ -637,3 +640,5 @@ div.button {
     }
 
 }
+
+@tailwind utilities;

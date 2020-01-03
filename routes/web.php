@@ -17,5 +17,9 @@ Route::get('recipes', 'PagesController@recipes')->name('recipes');
 Route::get('health-benefits', 'PagesController@healthBenefits')->name('health-benefits');
 Route::get('contact', 'PagesController@contact')->name('contact');
 
-Auth::routes();
+Route::get('ingredients/original', 'IngredientsController@original')->name('ingredients-original');
+Route::get('ingredients/ginger', 'IngredientsController@ginger')->name('ingredients-ginger');
+Route::get('ingredients/chili', 'IngredientsController@chili')->name('ingredients-chili');
+Route::get('ingredients/chipotle', 'IngredientsController@chipotle')->name('ingredients-chipotle');
 
+Auth::routes();
