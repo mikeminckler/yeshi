@@ -41,6 +41,12 @@
                 </div>
             </div>
 
+            <div class="button-container">
+                <div class="button">
+                    <a href="https://my-site-108684-102215.square.site/" target="_blank">Buy Online Now</a>
+                </div>
+            </div>
+
         </div>
 
     </div>

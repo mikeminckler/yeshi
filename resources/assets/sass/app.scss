@@ -588,8 +588,11 @@ div.button {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    padding: 1px 7px;
+    padding: 8px 12px;
     border-radius: 2px;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 8px 2px;
 
     & .button-icon {
         padding: 5px;

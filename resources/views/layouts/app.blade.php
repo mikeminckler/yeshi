@@ -29,6 +29,7 @@
             </div>
 
             <div class="menu">
+                <a href="https://my-site-108684-102215.square.site/" target="_blank" class="menu-item">Buy Online Now</a>
                 <a href="{{ route('recipes') }}" class="menu-item">Recipes</a>
                 <a href="{{ route('contact') }}" class="menu-item">Contact</a>
             </div>
