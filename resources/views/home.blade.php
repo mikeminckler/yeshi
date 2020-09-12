@@ -203,6 +203,31 @@
         <div class="banner-image"><img src="/images/bean_salad.jpg" class="banner-image"></div>
     </div>
 
+    <div class="banner-content padded caesar">
+        <div class="banner-text flavours">
+
+            <div class="flex-1">
+                <h2>Caesar</h2>
+                <div class="grid ideas">
+                    <div class="list-item" v-for="label in [
+                        'Salad',
+                        'Chicken Wrap',
+                        'Tofu', 
+                        'Marinated Chicken',
+                    ]">
+                        <div class="list-icon"><i class="fas fa-check"></i></div>
+                        <div class="list-name">@{{ label }}</div>
+                    </div>
+                </div>
+                <div class="py-4"><a href="/ingredients/caesar">Ingredients</a></div>
+            </div>
+
+            <div class="inset-image"><img src="/images/caesar.jpg" class="inset-image rounded"></div>
+        </div>
+        <div class="banner-bg"></div>
+        <div class="banner-image"><img src="/images/salad.jpg" class="banner-image"></div>
+    </div>
+
     <div class="gallery">
             
         <div class="image" v-for="image in [

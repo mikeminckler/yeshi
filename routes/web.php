@@ -21,5 +21,6 @@ Route::get('ingredients/original', 'IngredientsController@original')->name('ingr
 Route::get('ingredients/ginger', 'IngredientsController@ginger')->name('ingredients-ginger');
 Route::get('ingredients/chili', 'IngredientsController@chili')->name('ingredients-chili');
 Route::get('ingredients/chipotle', 'IngredientsController@chipotle')->name('ingredients-chipotle');
+Route::get('ingredients/caesar', 'IngredientsController@caesar')->name('ingredients-caesar');
 
 Auth::routes();

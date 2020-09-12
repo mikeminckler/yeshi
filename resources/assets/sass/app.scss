@@ -22,6 +22,7 @@
     --ginger-color: rgba(230,230,80,1);
     --chili-color: rgba(255,70,70,1);
     --chipotle-color: rgba(234,128,35,1);
+    --caesar-color: rgba(103,30,117,1);
 }
 
 
@@ -329,6 +330,22 @@ div.banner-content.chipotle {
 
     .list-icon {
         color: var(--chipotle-color);
+    }
+
+}
+
+div.banner-content.caesar {
+
+    h2 {
+        border-bottom-color: var(--caesar-color);
+    }
+
+    & img.inset-image {
+        border-color: var(--caesar-color);
+    }
+
+    .list-icon {
+        color: var(--caesar-color);
     }
 
 }

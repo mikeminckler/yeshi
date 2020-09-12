@@ -25,4 +25,9 @@ class IngredientsController extends Controller
     {
         return view()->make('ingredients.chipotle');
     }
+
+    public function caesar()
+    {
+        return view()->make('ingredients.caesar');
+    }
 }

@@ -62,12 +62,8 @@ const app = new Vue({
                         link: 'https://goo.gl/maps/eGmCSPRhiZF2',
                     },
                     {
-                        name: 'Country Grocer, Cobble Hill',
-                        link: 'https://goo.gl/maps/wjLTBXw7aNx',
-                    },
-                    {
-                        name: '49th Parallel Grocery, Ladysmith, Cedar, Chemainus',
-                        link: 'https://www.google.ca/maps/search/49th+Parallel+Grocery/@48.9465288,-123.9290373,11z/data=!3m1!4b1',
+                        name: 'Country Grocer',
+                        link: 'https://www.google.com/maps/search/country+grocer+vancouver+island/@48.806462,-124.0002516,10z/data=!3m1!4b1',
                     },
                     {
                         name: 'Market on Millstream, West Shore',
@@ -78,7 +74,7 @@ const app = new Vue({
                         link: 'https://goo.gl/maps/Ro4qjNGH3vC2',
                     },
                     {
-                        name: 'Sweat Meadows, Mill Bay',
+                        name: 'Sweet Meadows, Mill Bay',
                         link: 'https://goo.gl/maps/Grs9Zq899fr',
                     },
                     {
@@ -96,6 +92,10 @@ const app = new Vue({
                     {
                         name: 'Western Foods, Sooke',
                         link: 'https://goo.gl/maps/q9UJM6uS6bG2',
+                    },
+                    {
+                        name: '49th Parallel Grocery, Ladysmith, Cedar, Chemainus',
+                        link: 'https://www.google.ca/maps/search/49th+Parallel+Grocery/@48.9465288,-123.9290373,11z/data=!3m1!4b1',
                     },
                 ],
             },
