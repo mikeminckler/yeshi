@@ -11,7 +11,7 @@
             <h1>Contact</h1>
 
             <p>
-                Paul Kleinschmidt<br/>
+                Yeshi Dressing<br/>
                 (250) 710-8085<br/>
                 <a href="mailto:info@yeshidressing.com" target="_blank">info@yeshidressing.com</a>
             </p>
