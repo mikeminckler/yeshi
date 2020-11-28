@@ -115,19 +115,30 @@ const app = new Vue({
                         link: 'http://www.freshstmarket.com',
                     },
                     {
-                        name: 'Natures Pickens, Abbotsford',
-                        link: 'https://goo.gl/maps/z7YtD8NxmqA2',
+                        name: 'Choices Markets, All Locations',
+                        link: 'https://www.choicesmarkets.com/',
                     },
                     {
-                        name: 'Meinhardt Fine Foods, Downtown Vancouver',
-                        link: 'https://goo.gl/maps/GPTnRBeQcXK2',
-                    },
-                    {
-                        name: 'Nourish Market, Lynn Valley Village',
-                        link: 'https://goo.gl/maps/bYYvGuqGQQx',
+                        name: 'Urban Fare, All Locations',
+                        link: 'https://www.urbanfare.com',
                     },
                 ],
             },
+
+            {
+                name: 'BC Interior',
+                stores: [
+                    {
+                        name: 'Choices Markets, Kelowna',
+                        link: 'https://www.choicesmarkets.com/',
+                    },
+                    {
+                        name: 'Urban Fare, Kelowna',
+                        link: 'https://www.urbanfare.com',
+                    },
+                ],
+            },
+
             {
                 name: 'Alberta',
                 stores: [
@@ -138,6 +149,10 @@ const app = new Vue({
                     {
                         name: 'Freson Bros, Alberta',
                         link: 'http://freson.com/',
+                    },
+                    {
+                        name: 'Urban Fare, Mount Royal Calgary',
+                        link: 'https://www.urbanfare.com',
                     },
                 ],
             },
